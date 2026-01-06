@@ -1,5 +1,4 @@
-num=input()
-a, b, c= map(int, num.split())
+a, b, c= map(int, input().split())
 
 def dice(a, b, c):
     if a == b == c:
