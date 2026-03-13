@@ -15,8 +15,8 @@ def solution(tickets):
     while stack:
         cur = stack[-1] # 현재 위치
         if cur in graph and graph[cur]:
-            next = graph[cur].pop() # 알파벳 순서가 앞서는 경로부터 pop
-            stack.append(next)
+            nxt = graph[cur].pop() # 알파벳 순서가 앞서는 경로부터 pop
+            stack.append(nxt)
         else:
             answer.append(stack.pop())
 
